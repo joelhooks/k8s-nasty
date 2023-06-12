@@ -1,0 +1,15 @@
+# simple example of a config map that displays a substitute for the dfault nginx page
+# in an application. it's pretty annoying to build a site like this and probably a 
+# better idea to use a docker deployment or similar?
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: index-html-configmap
+  namespace: default
+data:
+  index.html: |
+    <html>
+    <h1>Welcome</h1>
+    </br>
+    <h1>This is dumb but here we are.</h1>
+    </html
