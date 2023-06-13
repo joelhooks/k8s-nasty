@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: webserver-app
-          image: localhost:32000/hello-chicken-bones:latest
+          image: joelhooks/hello-chicken-bones
           ports:
             - containerPort: 80
 ---

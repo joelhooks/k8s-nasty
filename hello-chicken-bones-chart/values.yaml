@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: localhost:32000/hello-chicken-bones
+  repository: joelhooks/hello-chicken-bones
   pullPolicy: Always
   tag: "latest"
 
